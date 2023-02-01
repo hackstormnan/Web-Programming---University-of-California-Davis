@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Dancing Script", cursive;
+  margin: 25pt;
+  font-size: 25pt;
+}
+
+main {
+  width: 80vh;
+  margin: auto;
+  flex: 1;
+}
+
+div.maincard {
+  background: #e6e2cf;
+  margin: 25pt 0;
+  padding: 12pt;
+  display: flex;
+  border-radius: 11px;
+}
+
+div.image {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cardImg {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+
+.image form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.image form input[type="file"] {
+  font-size: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+div.upload {
+  justify-content: center;
+}
+
+.upload form {
+  height: 90%;
+  width: 90%;
+  border: 1px dashed black;
+}
+
+.indie {
+  font-family: "Indie Flower", cursive;
+}
+
+.dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.long {
+  font-family: "Long Cang", cursive;
+}
+
+.home {
+  font-family: "Homemade Apple", cursive;
+  font-size: 10pt;
+  line-height: 26pt;
+}
+
+body {
+  font-family: "Ariel", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.but {
+  background-color: Transparent;
+  padding: 8px 20px;
+  margin: 6pt;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.upload .but {
+  border: none;
+  font-size: 15pt;
+}
+
+#message {
+  min-height: 40vh;
+  border-left: 1px solid black;
+  padding: 13pt;
+  flex: 1;
+}
+
+[contenteditable="true"]:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+}
+
+h2 {
+  margin: 5pt;
+}
+
+div.major {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.major .but {
+  margin-top: 2em;
+}
+
+div.fonts {
+  flex-shrink: 0;
+  margin-right: 12pt;
+}
+
+.fonts label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.fonts input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+}
+
+div.colorchoose {
+  flex-flow: row wrap;
+  display: flex;
+}
+
+div.color {
+  width: 23pt;
+  height: 23pt;
+  margin: 3pt;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 530px) {
+  main {
+    width: auto;
+    margin: 12pt;
+  }
+
+  .upload {
+    height: 40vh;
+  }
+
+  .upload form {
+    margin: 12pt 0;
+  }
+
+  .maincard {
+    flex-flow: column;
+    min-height: 60vh;
+  }
+
+  #message {
+    border-top: 1px solid black;
+    border-left: none;
+  }
+
+  .major {
+    flex-flow: row wrap;
+  }
+
+  footer {
+    position: relative;
+  }
+}

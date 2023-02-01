@@ -1,0 +1,101 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Postcard App</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="creator_style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script|Homemade+Apple|Indie+Flower|Long+Cang&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>Daily Postcard Creator</header>
+
+    <main>
+      <div class="maincard">
+        <div class="upload image">
+          <img id="cardImg" alt="user uploaded img" />
+          <form method="post" enctype="multipart/form-data">
+            <button class="but">Choose Image</button>
+            <input id="imgUpload" type="file" accept="image/*" name="photo" />
+          </form>
+        </div>
+        <div
+          contenteditable="true"
+          placeholder="Write your message here!"
+          id="message"
+          class="indie"
+        ></div>
+      </div>
+
+      <div class="major">
+        <div class="fonts">
+          <h2>
+            Choose your font
+          </h2>
+          <form id="fonts">
+            <label for="indie" class="indie">
+              <span>&#10070;</span>
+              Indie Flower
+              <input
+                type="radio"
+                id="indie"
+                name="font"
+                value="indie"
+                checked="true"
+              />
+            </label>
+            <label for="dancing" class="dancing">
+              <span>&#11046;</span>
+              Dancing Script
+              <input type="radio" id="dancing" name="font" value="dancing" />
+            </label>
+            <label for="long" class="long">
+              <span>&#11046;</span>
+              Long Cang
+              <input type="radio" id="long" name="font" value="long" />
+            </label>
+            <label for="home" class="home">
+              <span>&#11046;</span>
+              Homemade Apple
+              <input type="radio" id="home" name="font" value="home" />
+            </label>
+          </form>
+        </div>
+
+        <div class="changecolor">
+          <h2>
+            Choose your color
+          </h2>
+          <div class="colorchoose">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+          </div>
+        </div>
+        <button class="but" id="save">Share postcard</button>
+      </div>
+    </main>
+
+    <footer>
+      <p class="msg">
+        Made on Glitch!
+      </p>
+      <script src="./creator_script.js"></script>
+    </footer>
+  </body>
+</html>

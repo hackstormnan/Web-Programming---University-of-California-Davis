@@ -1,0 +1,45 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Postcard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="display_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Homemade+Apple|Indie+Flower|Long+Cang&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header> Daily Postcard</header>
+
+    <main>
+      
+      
+      <div class="maincard">
+        <div class="upload image">
+          <img id="cardImg" alt="user uploaded img"/>
+          <!-- <form method="post" enctype="multipart/form-data">
+            <button class="but">Choose Image</button>
+            <input id="imgUpload" type="file" accept="image/*" name="photo"/> 
+          </form>         -->
+        </div>
+        <div  placeholder="Write your message here!" id="message" class="indie"></div> 
+      </div>
+      
+     
+    </main>
+    
+ 
+    <footer>
+      <p class="msg">
+         Made on Glitch!
+      </p>  
+    <script src="display_script.js"></script>
+    </footer>
+  
+  </body>
+</html>
