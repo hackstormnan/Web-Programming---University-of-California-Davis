@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.lightblue {
+  background: #b3c1d1;
+}
+
+header {
+  margin: 1.5em;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#lafLogo {
+  height: 10vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 55vh;
+  margin: 1em;
+}
+
+
+.frame {
+  margin: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #142a50;
+  font-family: 'Montserrat', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  width: 35vh;
+  height: 8vh;
+  border: 0;
+  border-radius: 10px;
+  margin: 15px;
+  cursor: pointer;
+  outline:none;
+}
+
+.finder{
+  background: #daab27;
+}
+
+.seeker{
+  background: #142a50;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    display:flex;
+    flex-direction: column;
+    justify-content:initial; 
+    align-items: initial;
+  }
+  
+  .btn {
+    width: 30vh;
+  }
+}
