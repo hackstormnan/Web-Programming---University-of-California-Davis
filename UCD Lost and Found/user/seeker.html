@@ -1,0 +1,158 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>Seeker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/user/style.css">
+    
+  </head>
+  <body class="lightblue">
+    <header>
+      <img src="https://cdn.glitch.com/fd1029cd-0359-4ff7-929f-ee105bbd2da0%2FLogo.png?v=1590327787789" id="lafLogo"/>
+    </header>
+    
+    <main>
+      
+      <div class="show" id="input">
+        
+        <div class="frame">
+          <h2>Input the found item</h2>
+          <div class="searchBox">
+            <form method="post" action="/seekerInsert">
+              <div class="show" id="firstSearch">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+
+<!--                 <label for="category">Category</label>
+                <input type="text" id="category" name="category"> -->
+                
+                <label for="category">Category</label>
+                <input type="list" list="categories" name="category" id="category" />
+                <datalist id="categories">
+                  <option value="Electronics"> </option>
+                  <option value="Sports and Outdoors"> </option>
+                  <option value="Books"> </option>
+                  <option value="Key"></option>
+                  <option value="Wallets/Purses"></option>
+                </datalist>
+
+                <label for="description">Description</label>
+                <textarea type="text" id="description" name="description" rows="10"></textarea>
+
+                <label for="attachment">Attach a photo (optional)</label>
+                <input type="file" id="attachment" name="attachment">
+
+                <div class="endDiv">
+                  <button type="button" id="nextBtn" class="seeker smallBtn">
+                    Next
+                  </button>
+                </div>
+
+              </div>
+
+              <div class="hidden" id="secondSearch">
+
+                <label for="date">Data & Time</label>
+                <input type="date" id="date" name="date" value="2020-01-01">
+                <input type="time" id="time" name="time" value="00:00">
+
+                <label for="location">Location</label>
+                <div class="autocomplete" style="width:100%;">
+                <input type="text" id="location" name="location">
+                </div>
+                
+                <div class = "googleMap" id="googleMap" style="width:100%;height:400px;"></div>
+
+                <div class="endDiv">
+                  <input type="submit" value="Submit" class="seeker smallBtn" >
+                </div>
+
+              </div>
+            </form>
+          </div>  
+        </div>
+
+        <div class="frame">
+          <h2>Or search for existing requests</h2>
+          <div class="searchBox"  id="searchBar">
+            <div class="endDiv">
+              <img src="https://cdn.glitch.com/fd1029cd-0359-4ff7-929f-ee105bbd2da0%2Fsearch-solid.svg?v=1590327787464" class="searchLogo"/>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="hidden" id="search">
+        <div class="frame">
+          <h2>
+            Search for existing requests
+          </h2>
+          <div class="searchBox">
+            <div class="endDiv">
+              <img src="https://cdn.glitch.com/fd1029cd-0359-4ff7-929f-ee105bbd2da0%2Fsearch-solid.svg?v=1590327787464" class="searchLogo"/>
+            </div>
+          </div>
+        </div>
+        
+        <div class="frame">
+          <div class="searchBox">
+            <form>
+              <label for="date1">Data & Time</label>
+              <input type="date" id="date1" name="date1" value="2020-01-01">
+              <input type="time" id="time1" name="time1" value="00:00">
+              to
+              <input type="date" id="date2" name="date2" value="2020-01-01">
+              <input type="time" id="time2" name="time2" value="00:00">
+              
+<!--               <label for="category1">Category</label>
+              <input type="text" id="category1" name="category1"> -->
+              
+              <label for="category1">Category</label>
+                <input type="list" list="categories1" name="category1" id="category1" />
+                <datalist id="categories1">
+                  <option value="Electronics"> </option>
+                  <option value="Sports and Outdoors"> </option>
+                  <option value="Books"> </option>
+                  <option value="Key"></option>
+                  <option value="Wallets/Purses"></option>
+                </datalist>
+              
+              <label for="location1">Location</label>
+              <div class="autocomplete" style="width:100%;">
+              <input type="text" id="location1" name="location1">
+              </div>
+              
+              <div class = "googleMap" id="googleMap2" style="width:100%;height:400px;"></div>
+              
+              <div class="endDiv">
+<!--                 <input type="submit" value="Search" class="seeker smallBtn" onclick="searchAll()"> -->
+                <input
+                  type="button"
+                  value="Search"
+                  id="searchBtn"
+                  class="seeker smallBtn"
+                  onclick="searchAll()"
+                />
+              </div>
+              
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/user/script.js"></script>
+    <script src="/user/seeker.js"></script>
+<!--     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+  </body>
+</html>

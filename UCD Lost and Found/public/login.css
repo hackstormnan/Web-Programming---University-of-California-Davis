@@ -1,0 +1,109 @@
+/* this file is loaded by screen1.html and styles the page */
+
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+/*   width: 100vh; */
+}
+
+.libImg {
+/*   position: absolute; */
+  width: 50%;
+  height: 100%;
+  min-height: 400px;
+/*   display: flex;
+  justify-content: center; */
+  background-image: url(https://cdn.glitch.com/fd1029cd-0359-4ff7-929f-ee105bbd2da0%2FShields-entrance_Credit-Hector-Villicana_1924x1282-960x600-c-center.jpg?v=1590327788498);
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.imageWrapper{
+  height:100%;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  background: #365c85;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#lafLogo {
+  margin: 0 0 7vh 0;
+  width: 60%;
+}
+
+
+a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+#loginStartButton {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  border: 0;
+  margin: 10px;
+  padding: 0 0 0 0;
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  outline:none;
+}
+
+#googleIcon {
+  margin: 10px 0 10px 0;
+  height: 30px;
+/*   width: 30px; */
+}
+
+#googleText{
+  margin: 17px 20px 20px 20px;
+/*   height: 8vh; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+  color: #142a50;
+}
+
+@media screen and (max-width: 700px) {
+  
+  html,body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+/*     min-width: 100vh; */
+  }
+  
+  .libImg{
+    width: 100%;
+    min-height: 0px;
+/*     min-width: 625px; */
+    height: 50%;
+/*     overflow:hidden; */
+/*     display: block; */
+  }
+  
+  
+  #login {
+    width: 100%;
+    height: 50%;
+  }
+}
