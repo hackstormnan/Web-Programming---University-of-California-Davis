@@ -1,0 +1,142 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example of text overlaid on an image</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <header>
+    <div class="div1">
+      <h1>
+        jan shrem and maria
+        <span>manetti shrem museum</span>
+        of art
+      </h1>
+    </div>
+    <div class = "bo">
+      <a>home</a>
+      <a>visit</a>
+      <a>about</a>
+    </div>
+  </header>
+  <br />
+
+  <div class="countdown">
+    <div class="countdown1">
+      <p id="count"></p>
+    </div>
+  </div>
+  <br />
+
+  <p class="body2">
+    Stephan Kaltenbach: The Beginning and The End
+    <br /><br />
+  </p>
+  <p class="body3">
+    On view january 26-May 10, 2020
+    <br /><br />
+  </p>
+
+  <body>
+    
+    
+    <div class="slideshow">
+      <div class="mySlides fade">
+        <div class="number">1 / 4</div>
+        <img src="../assets/fabric.jpg" style="width:100%">
+        <div class="sentence">Stephen Kaltenbach and guests, MODERN DRAPERY,2020. Felt Fabric, 45 X 60 inches.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="number">2 / 4</div>
+        <img src="../assets/fatherPortrait.jpg" style="width:100%">
+        <div class="sentence">Stephen Kaltenbach, Portrait of My Father, 1972-79. Acrylic on canvas, 114 X 170 inches</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="number">3 / 4</div>
+        <img src="../assets/roomCube.jpg" style="width:100%">
+        <div class="sentence">Stephen Kaltenbach, Room Cube, 1967. Blueprint, 18 X 24 inches, edition of 10.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="number">4 / 4</div>
+        <img src="../assets/openAfterDeath.jpg" style="width:100%">
+        <div class="sentence">Stephen Kaltenbach, OPEN AFTER MY DEATH, 1970. Mild steel, engraved, with unknown contents, 3
+          X 6 X 3 inches.</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+  
+    
+    
+    
+    <div class = "nodes">
+      <span class = "point" onclick = "currentSlide(1)"></span>
+      <span class = "point" onclick = "currentSlide(2)"></span>
+      <span class = "point" onclick = "currentSlide(3)"></span>
+      <span class = "point" onclick = "currentSlide(4)"></span>
+    </div>
+    
+    <br />
+      
+    <p class = "major">
+      
+      <p class="body">
+      During the late 1960s, after graduating from UC Davis (BA, 1966; MA, 1967)
+      and moving to New York, Stephen Kaltenbach established a reputation in the
+      emerging international field of Conceptual art. But in 1970, just as he
+      was achieving career success, Kaltenbach abruptly withdrew to California’s
+      Central Valley, appearing to abandon Conceptual work in favor of the more
+      traditional mediums of painting and sculpture. Coinciding with the 50th
+      anniversary of his “dropout,” this exhibition considers Kaltenbach’s
+      engagement with time as a principal theme across his remarkably diverse
+      career, which encompasses bronze time capsules, advertisements placed
+      anonymously in Artforum magazine in 1968-69, and the monumental
+      photorealist painting Portrait of My Father (1972-79)
+      <br /><br /><br /><br /><br /><br /><br />
+      </p>
+      <p class="body1">Guest Curators: Constance Lewallen and Ted Mann</p>
+      
+    </p>
+    
+
+    <footer class="footer">
+      <div1>
+        <h3>manetti shrem museum</h3>
+        <p1>254 Old Davis Rd. Davis, CA 95616</p1>
+      </div1>
+      <div2>
+        <h3>Hours</h3>
+        <ul>
+          <p1>Tuesday, Wednesday, and Friday: Noon-6pm</p1>
+          <p1>Thursday: Noon-9pm</p1>
+          <p1>Saturday-Sunday: 11am-5pm</p1>
+          <p1>Monday: Closed</p1>
+        </ul>
+      </div2>
+      <div3>
+        <h3>
+          The Manetti Shrem Museum will be temporarily closed starting March 16,
+          2020
+        </h3>
+        <p1>
+          This is to prioritize the health and safety of our students, faculty,
+          and the community at large. Thank you for your patience.
+        </p1>
+      </div3>
+    </footer>
+  </body>
+
+  <script src = "script.js"></script>
+</html>
+

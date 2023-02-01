@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+span {
+  color: #c9523d;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 10px;
+  color: black;
+  font-weight: bold;
+  height: 30px;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+p.meme {
+  color: #f1f1f1; /* color given as RGB */
+  font-size: 8px;
+  margin: 10px;
+  position: relative; /* this places the element within its parent */
+  left: 32px; /* coord within parent */
+  bottom: 30px; /* coord within parent */
+}
+
+div.imageWrapper {
+  width: 100%;
+  max-width: 400px;
+
+  position: relative; /* this has no effect */
+  /* except that the parent of a positioned element has to be positioned.  */
+  /* hey, I did not devise this crazy system, that is just how it is.  */
+}
+
+div.glitchButton {
+  width: 80px;
+}
+
+div.div1 {
+}
+
+p.msg {
+  margin: 15px;
+}
+
+p.major {
+  position: relative;
+  text-align: center;
+  max-width: 1000px;
+}
+
+p.body {
+  font-size: 13px;
+  max-width: 1000px;
+  display: flex;
+  position: relative;
+}
+
+p.body1 {
+  font-size: 12px;
+  position: relative;
+  max-width: 1000px;
+}
+
+p.body2 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+p.body3 {
+  position: relative;
+  font-size: 11px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+
+p1 {
+  font-size: 10px;
+  font-weight: lighter;
+  height: 20px;
+}
+
+div.countdown {
+  display: flex;
+  height: 100px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+#count {
+  color: white;
+  font-size: 50px;
+}
+
+div.countdown1 {
+  justify-content: center;
+}
+
+div.slideshow {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+div.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+div.number {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 1px;
+}
+
+div.sentence {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+span.point {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+div.nodes {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #c6d2da;
+  padding: 2px;
+  text-align: left;
+}
+
+div1 {
+  flex: 1;
+}
+
+div2 {
+  flex: 2;
+}
+
+div3 {
+  flex: 4;
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    justify-content: space-between;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #c6d2da;
+    padding: 3px;
+    text-align: left;
+  }
+
+  div1 {
+    flex: 1;
+  }
+
+  div2 {
+    flex: 2;
+  }
+
+  div3 {
+    flex: 4;
+  }
+}
+
+div.bo {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.bo a {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
